@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { KanbanSquare, BrainCircuit, Blocks, Sparkles, Move, Users, ShieldCheck, Zap, Lock } from 'lucide-react';
+import { KanbanSquare, Gift  , BrainCircuit, Blocks, Sparkles, Move, Users, ShieldCheck, Zap, Lock } from 'lucide-react';
 
 const LandingHeader = () => (
   <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
@@ -25,6 +25,9 @@ const LandingHeader = () => (
         </Button>
         <Button asChild>
           <Link href="/signup">Get Started</Link>
+        </Button>
+        <Button variant="outline" asChild>
+          <Link href="#"><Gift  className="h-6 w-6 text-primary" />Contribute</Link>
         </Button>
       </div>
     </div>
@@ -71,10 +74,10 @@ const LandingFooter = () => (
                     <KanbanSquare className="h-6 w-6 text-primary" />
                     <span>TaskFlow</span>
                 </div>
-                <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} TaskFlow. All rights reserved.</p>
+                <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} TaskFlow. All rights reserved. | Powered by inktagon.com</p>
                 <div className="flex gap-4">
-                    <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Privacy Policy</Link>
-                    <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link>
+                    <Link href="mailto:dev@inktagon.com" className="text-sm text-muted-foreground hover:text-foreground">Say Hello !</Link>
+                    {/* <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link> */}
                 </div>
             </div>
         </div>
