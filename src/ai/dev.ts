@@ -1,7 +1,7 @@
 'use server';
 
-import { config } from 'dotenv';
-config();
+// import { config } from 'dotenv';
+// config();
 
 import '@/ai/genkit';
 import '@/ai/flows/generate-subtasks.ts';
