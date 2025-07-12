@@ -3,6 +3,7 @@
 import { config } from 'dotenv';
 config();
 
+import '@/ai/genkit';
 import '@/ai/flows/generate-subtasks.ts';
 import '@/ai/flows/generate-dashboard-summary.ts';
 import '@/ai/flows/generate-audio-summary.ts';
