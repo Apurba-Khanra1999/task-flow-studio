@@ -217,22 +217,22 @@ export default function RootPage() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <TestimonialCard 
-                        name="Sarah Johnson"
+                        name="Sunidhi Sharma"
                         role="Creative Director"
                         text="The AI Smart Create feature is mind-blowing. It saves me hours of administrative work every week and lets my team focus on the actual creative tasks."
-                        avatarSrc="https://placehold.co/100x100.png"
+                        avatarSrc="https://dev.inktagon.com/fileupload/testimonial-1.png"
                     />
                     <TestimonialCard 
-                        name="Michael Chen"
+                        name="Rabin Pal"
                         role="Freelance Developer"
                         text="As a freelancer, I juggle multiple projects. The 'Smart Sort' feature is my secret weapon for staying on top of deadlines and priorities. I can't imagine my workflow without it."
-                        avatarSrc="https://placehold.co/100x100.png"
+                        avatarSrc="https://dev.inktagon.com/fileupload/testimonial-2.png"
                     />
                     <TestimonialCard 
-                        name="Emily Rodriguez"
+                        name="William Rodriguez"
                         role="Startup Founder"
                         text="TaskFlow brought immediate clarity to our startup. The Kanban board is incredibly intuitive, and seeing our entire workflow visually has improved our team's alignment and speed."
-                        avatarSrc="https://placehold.co/100x100.png"
+                        avatarSrc="https://dev.inktagon.com/fileupload/testimonial-3.png"
                     />
                 </div>
             </div>

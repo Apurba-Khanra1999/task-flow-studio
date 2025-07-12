@@ -67,8 +67,13 @@ const parseNaturalLanguageTaskFlow = ai.defineFlow(
   }
 );
 
+// Define a simple type for the wrapper function's input
+type WrapperInput = {
+  text: string;
+};
+
 export async function parseNaturalLanguageTask(
-  input: z.infer<typeof z.object({text: z.string()})>
+  input: WrapperInput
 ): Promise<ParseNaturalLanguageTaskOutput> {
   const currentDate = format(new Date(), 'yyyy-MM-dd');
   return parseNaturalLanguageTaskFlow({text: input.text, currentDate});
